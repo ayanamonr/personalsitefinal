@@ -229,3 +229,8 @@ tr{
 .other-buttons{
     text-align: center;
 }
+
+button{
+    margin-left: 15px;
+    margin-right: 15px;
+}

@@ -5,10 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title>Collapsible sidebar using Bootstrap 3</title>
+        <title> Ayana Monroe - What I Do </title>
 
-        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
         <!-- Bootstrap CSS CDN -->
+        <link href="/bootstrap4-glyphicons/css/bootstrap-glyphicons.min.css" rel="stylesheet" type="text/css" />
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- Scrollbar Custom CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
@@ -53,9 +55,7 @@
                 <div class="sidebar-header">
                     <img src="images/nav img.jpg" class="rounded-circle header-image" alt="" >
                 </div>
-
-
-                
+              
 
 
                 <ul class="list-unstyled components">
@@ -88,18 +88,87 @@
 
                     <div class="container-fluid">
                             <button type="button" id="sidebarCollapse" class="btn btn-info btn-light">
-                                <i class="glyphicon glyphicon-align-left"> <i class="fas fa-bars"></i> </i>
+                                    <i class="fas fa-bars"></i>
                             </button>                            
                     </div>     
                     
                     <div class="container-fluid  " id="text"></div>
-                    <h1> Things I Do </h1>
-                            <h3> In my capacity as a high schooler, I dedicate as much time as I can to helping others in my community.
-                                 I work with groups to get technology to underserved areas around the world, and I support the groups in my community that teach young underprivileged students learn how to code. 
-                                 I am also very integral in my educational community (school). </h3>
+                    <h1> What I Do </h1>
+                            <h3> In my capacity as a high schooler, I dedicate as much time as I can to help others in my community.
+                                 I work with groups to deliver technology to underserved areas around the world, as well as supporting the groups in my community that teach young,underprivileged students how to code. 
+                                 I a also play an integral part in my educational community (school). </h3>
                             <h4> Click around below learn more</h4>   
+                <div class="container-fluid">
+                    <button class="collapsible-accordian"> Maryland Center For Women In Computing [MCWIC] Teaching Assistant </button>
+                    <div id="content-accordian">
+                    <p class="p-content">
+                            - Mentors local middle school students in conjunction with the UMD MCWIC program 
+                            <br> - Teaches simple programming languages and fundamental Computer Science principles
+                    </p>
+                    </div>
+                    <button class="collapsible-accordian">World Computer Exchange Volunteer:              </button>
+                    <div id="content-accordian">
+                    <p class = "p-content">
+                        - Refurbishes desktop and laptop computers
+                        <br> - Develops outreach initiatives in conjunction with leadership and schools</p>
+                    </div>
+                    <button class="collapsible-accordian"> Delta Scholars Co-President:  </button>
+                    <div id="content-accordian">
+                    <p class = "p-content">
+                        - Promotes female education, leadership, and cultural awareness 
+                        <br> - Leads workshops, holds discussions and events, as well as perform community outreach
+                    </p>
+                    </div>
+                    <button class="collapsible-accordian"> Maryland Center For Women In Computing [MCWIC] Teaching Assistant </button>
+                    <div id="content-accordian">
+                    <p class="p-content">
+                            - Mentors local middle school students in conjunction with the UMD MCWIC program 
+                            <br> - Teaches simple programming languages and fundamental Computer Science principles
+                    </p>
+                    </div>
+                    <button class="collapsible-accordian"> Society of Women Engineers President </button>
+                    <div id="content-accordian">
+                    <p class = "p-content">
+                        - Coordinates meetings to focus on STEM topics
+                        <br> - Supervises Long Reach Physics team competitions
+                    </p>
+                    </div>
+                    <button class="collapsible-accordian"> Applied Physics Lab Intelligent Systems Center (APL ISC) Intern:        
+                        </button>
+                    <div id="content-accordian">
+                    <p class = "p-content">
+                        - Participated in projects relating to Computer Science, Engineering and Software Development
+                        <br> -  Assisted APL employees with their projects involving Neuroscience and Computer Science
+                    </p>
+                    </div>
+                    <button class="collapsible-accordian"> CodeHER Chief Operations Officer:
+                        </button>
+                    <div id="content-accordian">
+                    <p class = "p-content">
+                        - Manages all internal codeHER functions and  serves as the internal leader
+                        <br> - Performs tasks necessary to achieve the organization's mission and fulfill growth plans
+                    </p>
+                    </div>
+                    <button class="collapsible-accordian"> Howard County Association of Student Councils (HCASC) STEM Committee Chair:
+                        </button>
+                    <div id="content-accordian">
+                    <p class = "p-content">
+                            - Finds STEM opportunities for Howard County students                        
+                            <br>  - Coordinates STEM volunteering events and meetings for HCASC
+                    </p>
+                    </div>
+                   
+                    <button class="collapsible-accordian"> Hack Club President
+                        </button>
+                    <div id="content-accordian">
+                    <p class = "p-content">
+                        - Leads Hack Club biweekly meetings
+                        <br> - Directs members through website, application and game development 
+                    </p>
 
-                            
+                    </div>
+                                                
+                </div>
                     </div>
 
                     
@@ -133,6 +202,22 @@
                     $('a[aria-expanded=true]').attr('aria-expanded', 'false');
                 });
             });
+
+            
+            var coll = document.getElementsByClassName("collapsible-accordian");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                content.style.maxHeight = null;
+                } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+            }
         </script>
     </body>
 </html>
