@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Collapsible sidebar using Bootstrap 3</title>
+
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+        <link rel="stylesheet" href="css/what-i-do.css">
+<style>
+  
+  /*
+    DEMO STYLE
+*/
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #content {
+        width: 100%;
+    }
+    #content.active {
+        width: calc(100% - 250px);
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+</style>
+    </head>
+    <body>
+
+
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <img src="images/nav img.jpg" class="rounded-circle header-image" alt="" >
+                </div>
+
+
+                
+
+
+                <ul class="list-unstyled components">
+                        <!-- <p>Dummy Heading</p> -->
+                        <li class="active">
+                            <a href="index.html" > &emsp; &emsp; &emsp;Home</a>
+                            
+                        </li>
+                        <li>
+                            <a href="about.html"> &emsp; &emsp; &emsp;About</a>
+                            
+                            
+                        </li>
+                        <li>
+                            <a href="what-i-do.html"> &emsp; &emsp; &emsp;What I Do</a>
+                        </li>
+                        <li>
+                            <a href="skillsandawards.html"> &emsp; &emsp; &emsp; Skills & Awards </a>
+                        </li>
+                        <li>
+                            <a href="contact.html"> &emsp; &emsp; &emsp; Contact</a>
+                        </li>             
+                    </ul>
+    
+                
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+
+                    <div class="container-fluid">
+                            <button type="button" id="sidebarCollapse" class="btn btn-info btn-light">
+                                <i class="glyphicon glyphicon-align-left"> <i class="fas fa-bars"></i> </i>
+                            </button>                            
+                    </div>     
+                    
+                    <div class="container-fluid  " id="text"></div>
+                    <h1> Things I Do </h1>
+                            <h3> In my capacity as a high schooler, I dedicate as much time as I can to helping others in my community.
+                                 I work with groups to get technology to underserved areas around the world, and I support the groups in my community that teach young underprivileged students learn how to code. 
+                                 I am also very integral in my educational community (school). </h3>
+                            <h4> Click around below learn more</h4>   
+
+                            
+                    </div>
+
+                    
+
+                </div>
+
+
+            </div>
+
+            
+        </div>
+
+
+
+
+
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <!-- Bootstrap Js CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+               
+
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar, #content').toggleClass('active');
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+            });
+        </script>
+    </body>
+</html>
